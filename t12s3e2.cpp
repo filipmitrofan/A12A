@@ -3,18 +3,18 @@
 using namespace std;
 int perechi(int n, int m)
 {
-    int r,k{};
+    int r,k{},a,b;
     for(int i=1;i<n;i++)
     {
         for(int j=1;j<n;j++)
         {
-            while(j)
+            while(b)
             {
-                r=i%j;
-                i=j;
-                j=r;
+                r=a%b;
+                a=b;
+                b=r;
             }
-            if(i*j/i==m)
+            if(i*j/a==m)
                 k++;
         }
     }

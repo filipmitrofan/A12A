@@ -1,16 +1,23 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <string.h>
 
 using namespace std;
 
 int main()
 {
-    char s[101],*p;
-  cin.get(s,101);
-  p=strtok(s," ");
-  while(p!=NULL){
 
-   p[0]=p[0]-32;
-   cout<<p<<" ";
-    p=strtok(NULL," ");
-  }
+    char c[256];
+    cin.get(c,255);
+    int i;
+    c[0]=c[0]-32;
+    for (i=1; i<strlen(c); i++)
+    {
+        if (c[i]!=' '&&c[i-1]==' ')
+            c[i]=c[i]-32;
+
+    }
+    cout<<c;
+
+    return 0;
+
 }

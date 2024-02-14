@@ -2,21 +2,21 @@
 
 using namespace std;
 ifstream fin("bac.in");
-int n, fr[10000];
-
 int main()
 {
-    int y;
-    for(int i = 1; i <= 10000; i++) {
-        while(fin>>y)
-        {
-            fr[y]++;
-        }
+    long x, y, n;
+  f >> x;
+  n = 1;
+  while (f >> y) {
+    if (x == y)
+      n++;
+    else {
+      cout << x << " " << n << " ";
+      n = 1;
     }
-    for(int i = 1; i <= 10000; i++) {
-            if(fr[i]>0)
-            cout << i<<" "<< fr[i]<<" ";
-        }
+    x = y;
+  }
+  cout << x << " " << n;
 
     return 0;
 }

@@ -21,7 +21,7 @@ int main()
   d)a=0;
 Subiectul 2
 2.d
-3.9bamet
+3.9bemeut
 4.2 ;5,7,8;
 5.#include <iostream>
 

@@ -3,7 +3,7 @@ Subiectul 1
 
 2.a. ABABABAB;
 
-   b.12       (1,6)(2,12)(2,13)(3,18)(3,19)(3,20);
+   b.12 (1,6)(2,12)(2,13)(3,18)(3,19)(3,20);
 
    c. #include<iostream>
 
@@ -39,9 +39,9 @@ d.
 
 2.b);
 
-3. 3 si 1;
+3. n-1 si 1;
 
-4. 11          b*t;
+4. 11 b*t;
 5. #include<iostream>
 
 using namespace std;
@@ -79,19 +79,31 @@ void interval(int a[], int n)
 }
 
 
-4. int main()
+4.#include <bits/stdc++.h>
+
+using namespace std;
+ifstream fin("date.in");
+int main()
 {
-    int n,x,y,nr;
-    f>>n;
-    nr=n;
-    f>>x;
-    while(n)
+    int x,f[10001]{},k=13,aux,i;
+    while(fin>>x)
     {
-        f>>y;
-        if(x<y)
-            nr--;
-        n--;
+        f[x]++;
     }
-    cout<<nr;
+    for(i=10000;i>=0;i--)
+    {
+        if(f[i]!=0)
+        {
+            k--;
+        }
+        if(k==0)
+        {
+            aux=i;
+            break;
+        }
+
+    }
+    cout<<aux;
     return 0;
 }
+

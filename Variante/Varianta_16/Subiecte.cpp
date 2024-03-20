@@ -1,7 +1,7 @@
 Subiectul 1
 1.a
-2.a)****#***
-  b)11
+2.a)***#***
+  b)12
   c)
 d)
 Subiectul 2
